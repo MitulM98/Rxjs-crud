@@ -1,0 +1,16 @@
+<h2>Edit Item</h2>
+<form [formGroup]="itemForm">
+  <div class="form-group">
+    <label for="name">Name:</label>
+    <input type="text" class="form-control" id="name" formControlName="name" />
+  </div>
+  <div class="form-group">
+    <label for="description">Description:</label>
+    <input type="text" class="form-control" id="description" formControlName="description" />
+  </div>
+</form>
+<div class="dialog-buttons">
+  <button class="btn btn-primary" (click)="saveChanges()">Save</button>
+  <button class="btn btn-secondary" (click)="closeDialog()">Cancel</button>
+</div>
+

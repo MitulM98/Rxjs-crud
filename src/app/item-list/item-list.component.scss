@@ -1,0 +1,123 @@
+.item-list-container {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  color: #333;
+}
+
+.search-container {
+  margin-top: 20px;
+}
+
+.form-control {
+  width: auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.item-list {
+  margin-top: 20px;
+}
+
+.item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.item-info {
+  margin-bottom: 5px;
+}
+
+.item-label {
+  font-weight: bold;
+  color: #333;
+}
+
+.item-value {
+  color: #555;
+}
+
+.item-actions {
+  margin-top: 10px;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+.btn-success {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #2E7D32; /* Dark green background color */
+  color: #fff; /* Light text color */
+  padding: 10px 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.navbar-brand {
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff; /* Light text color for the brand */
+}
+
+/* Add a border at the bottom of the navbar */
+.navbar {
+  border-bottom: 2px solid #4CAF50; /* Light green border */
+}
+
+/* Add a margin at the bottom of the navbar */
+.navbar {
+  margin-bottom: 20px;
+}
+
+/* Buttons */
+.btn-success,
+.btn-primary,
+.btn-danger {
+  border-radius: 20px; /* Rounded edges */
+  font-family: 'Arial', sans-serif; /* Change font style */
+  font-size: 18px; /* Increased button size */
+  padding: 10px 20px; /* Padding */
+  margin-right: 10px; /* Margin between buttons */
+}
+
+/* Additional styling for item fields (adjust as needed) */
+.item-info .item-value {
+  font-weight: bold;
+  font-size: 16px;
+  color: #333;
+}

@@ -1,0 +1,39 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Item List Management</a>
+</nav>
+
+<div class="item-list-container">
+    <button class="btn btn-success" [routerLink]="['/items/add']">Add Item</button>
+
+    <div class="search-container">
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Search items..."
+        [(ngModel)]="searchQuery"
+      />
+    </div>
+
+
+    <div class="item-list">
+      <div class="item" *ngFor="let item of items | filterItems: searchQuery">
+        <div class="item-info">
+          <span class="item-label">ID:</span>
+          <span class="item-value">{{ item.id }}</span>
+        </div>
+        <div class="item-info">
+          <span class="item-label">Name:</span>
+          <span class="item-value">{{ item.name }}</span>
+        </div>
+        <div class="item-info">
+          <span class="item-label">Description:</span>
+          <span class="item-value">{{ item.description }}</span>
+        </div>
+        <div class="item-actions">
+          <button class="btn btn-primary" (click)="editItem(item)">Edit</button>
+          <button class="btn btn-danger" (click)="deleteItem(item.id)">Delete</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
